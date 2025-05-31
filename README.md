@@ -107,19 +107,22 @@ cd TestArief
 # Run unit tests
 ./gradlew test
 
-# Run instrumented tests
-./gradlew connectedAndroidTest
-```
 
 ### Test Coverage
 ```bash
 # Generate coverage report
-./gradlew jacocoTestReport
+
+# For Core Module
+.\gradlew :core:data:test :core:domain:test :core:data:jacocoTestReport :core:domain:jacocoTestReport
+
+#For Feature Module
+.\gradlew :feature:request:test :feature:request:jacocoTestReport
 
 # View coverage reports at:
 # - app/build/reports/jacoco/jacocoTestReport/html/index.html
 # - feature/request/build/reports/jacoco/jacocoTestReport/html/index.html
 # - core/data/build/reports/jacoco/jacocoTestReport/html/index.html
+# - core/domain/build/reports/jacoco/jacocoTestReport/html/index.html
 ```
 
 ### Build Commands
