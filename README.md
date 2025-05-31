@@ -1,5 +1,47 @@
 # Technical test for SolveWithVia - Android Request Processing App
 
+Home
+![image](https://github.com/user-attachments/assets/e6f10d57-6e87-44dc-a578-fa733dd09101)
+
+Create Request
+![image](https://github.com/user-attachments/assets/8c4916ce-0c7f-4174-8185-bef51f006388)
+
+Request List
+![image](https://github.com/user-attachments/assets/674ee7a2-4458-441b-b59a-a39c95549bee)
+
+Dark Mode & Font Size Setting
+![image](https://github.com/user-attachments/assets/ed3183e5-275d-4d8c-beda-00beb810bce0)
+
+<details>
+<summary>📱 App Screenshots</summary>
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://github.com/user-attachments/assets/e6f10d57-6e87-44dc-a578-fa733dd09101" width="300" alt="Home">
+        <br><b>🏠 Home</b>
+      </td>
+      <td align="center">
+        <img src="https://github.com/user-attachments/assets/8c4916ce-0c7f-4174-8185-bef51f006388" width="300" alt="Create Request">
+        <br><b>➕ Create Request</b>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://github.com/user-attachments/assets/674ee7a2-4458-441b-b59a-a39c95549bee" width="300" alt="Request List">
+        <br><b>📋 Request List</b>
+      </td>
+      <td align="center">
+        <img src="https://github.com/user-attachments/assets/ed3183e5-275d-4d8c-beda-00beb810bce0" width="300" alt="Settings">
+        <br><b>⚙️ Dark Mode & Font Size Setting</b>
+      </td>
+    </tr>
+  </table>
+</div>
+
+</details>
+
 ## 📱 Overview
 
 TestArief is a modern Android application built for the **SolveWithVia** technical interview. This project demonstrates a simplified request processing flow with clean architecture principles, multi-module structure, and comprehensive code quality tools.
