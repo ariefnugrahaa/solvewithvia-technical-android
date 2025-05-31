@@ -1,8 +1,6 @@
 # Technical test for SolveWithVia - Android Request Processing App
 
-<details>
-<summary>📱 App Screenshots</summary>
-
+## 📱 Screenshots
 <div align="center">
   <table>
     <tr>
@@ -27,8 +25,6 @@
     </tr>
   </table>
 </div>
-
-</details>
 
 ## 📱 Overview
 
