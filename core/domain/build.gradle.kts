@@ -63,6 +63,7 @@ dependencies {
     androidTestImplementation(Deps.Test.androidJunit)
     androidTestImplementation(Deps.Test.espresso)
     kapt(Deps.Room.compiler)
+    detektPlugins(Deps.detektFormatting)
 }
 
 jacoco {
