@@ -96,22 +96,6 @@ TestArief/
 
 ## 🚀 Getting Started
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/your-username/TestArief.git
-cd TestArief
-```
-
-### 2. Open in Android Studio
-1. Launch Android Studio
-2. Select **"Open an existing project"**
-3. Navigate to the cloned directory and select it
-4. Wait for Gradle sync to complete
-
-### 3. Run the Application
-- Connect your Android device or start an emulator
-- Click the **Run** button or press `Ctrl+R`
-
 ## 🔧 Development Commands
 
 ### Code Quality Analysis
