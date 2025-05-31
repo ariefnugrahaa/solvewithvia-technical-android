@@ -1,0 +1,186 @@
+build:
+  maxIssues: 0
+  excludeCorrectable: false
+  weights:
+    complexity: 2
+    style: 1
+    LongParameterList: 1
+    comments: 1
+
+complexity:
+  excludes: &testFolders
+    - '**/test/**'
+    - '**/androidTest/**'
+    - '**/src/test/**'
+    - '**/src/androidTest/**'
+  TooManyFunctions:
+    thresholdInFiles: 20
+    thresholdInClasses: 15
+    thresholdInInterfaces: 10
+    thresholdInObjects: 10
+  LongParameterList:
+    functionThreshold: 10
+    constructorThreshold: 11
+  CyclomaticComplexMethod:
+    threshold: 15
+  LargeClass:
+    threshold: 150
+  NestedBlockDepth:
+    threshold: 4
+  LongMethod:
+    active: false
+
+naming:
+  excludes: *testFolders
+  FunctionNaming:
+    active: false
+  PackageNaming:
+    active: false
+
+style:
+  excludes: *testFolders
+  MagicNumber:
+    active: false
+    ignoreNumbers: ['-1', '0', '1', '2']
+    ignoreHashCodeFunction: true
+    ignorePropertyDeclaration: true
+    ignoreAnnotation: true
+  MaxLineLength:
+    active: false
+    maxLineLength: 120
+  NewLineAtEndOfFile:
+    active: false
+  TrailingWhitespace:
+    active: false
+  UnusedImports:
+    active: true
+  WildcardImport:
+    active: true
+
+formatting:
+  excludes: *testFolders
+  active: true
+  android: true
+  autoCorrect: true
+  AnnotationOnSeparateLine:
+    active: false
+  ArgumentListWrapping:
+    active: false
+  ChainWrapping:
+    active: true
+  CommentWrapping:
+    active: true
+  Filename:
+    active: true
+  FinalNewline:
+    active: false
+  ImportOrdering:
+    active: false
+  Indentation:
+    active: true
+  MaximumLineLength:
+    active: false
+    maxLineLength: 120
+  NewLineAtEndOfFile:
+    active: false
+  NoTrailingSpaces:
+    active: false
+  NoConsecutiveBlankLines:
+    active: false
+  NoEmptyClassBody:
+    active: true
+  NoWildcardImports:
+    active: true
+  PackageName:
+    active: false
+  ParameterListWrapping:
+    active: true
+  SpacingAroundColon:
+    active: true
+  SpacingAroundComma:
+    active: true
+  SpacingAroundCurly:
+    active: true
+  SpacingAroundDot:
+    active: true
+  SpacingAroundKeyword:
+    active: true
+  SpacingAroundOperators:
+    active: true
+  SpacingAroundParens:
+    active: true
+  SpacingAroundRangeOperator:
+    active: true
+  StringTemplate:
+    active: true
+  Wrapping:
+    active: false
+
+empty-blocks:
+  EmptyFunctionBlock:
+    active: true
+  EmptyClassBlock:
+    active: true
+  EmptyIfBlock:
+    active: true
+  EmptyWhileBlock:
+    active: true
+  EmptyForBlock:
+    active: true
+  EmptyTryBlock:
+    active: true
+  EmptyCatchBlock:
+    active: true
+  EmptyFinallyBlock:
+    active: true
+  EmptyDoWhileBlock:
+    active: true
+  EmptyElseBlock:
+    active: true
+  EmptyWhenBlock:
+    active: true
+
+exceptions:
+  excludes: *testFolders
+  TooGenericExceptionCaught:
+    active: false
+  TooGenericExceptionThrown:
+    active: false
+
+potential-bugs:
+  EqualsAlwaysReturnsTrueOrFalse:
+    active: true
+  EqualsWithHashCodeExist:
+    active: true
+  ExplicitGarbageCollectionCall:
+    active: true
+  HasPlatformType:
+    active: true
+  IgnoredReturnValue:
+    active: true
+  ImplicitDefaultLocale:
+    active: true
+  InvalidRange:
+    active: true
+  IteratorHasNextCallsNextMethod:
+    active: true
+  IteratorNotThrowingNoSuchElementException:
+    active: true
+  LateinitUsage:
+    active: false
+  MapGetWithNotNullAssertionOperator:
+    active: true
+  UnconditionalJumpStatementInLoop:
+    active: true
+  UnnecessaryNotNullOperator:
+    active: true
+  UnnecessarySafeCall:
+    active: true
+  UnreachableCode:
+    active: true
+  UnsafeCallOnNullableType:
+    active: true
+  UselessPostfixExpression:
+    active: true
+  WrongEqualsTypeParameter:
+    active: true
