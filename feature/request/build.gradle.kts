@@ -70,23 +70,23 @@ dependencies {
     implementation(Deps.Navigation.compose)
     implementation(Deps.Coroutines.android)
 
-    debugImplementation("androidx.compose.ui:ui-tooling:1.5.4")
-    debugImplementation("androidx.compose.ui:ui-test-manifest:1.5.4")
-
+    debugImplementation(Deps.Compose.uiTooling)
+    debugImplementation(Deps.Compose.uiTestManifest)
+    
+    testImplementation(Deps.AndroidX.archCore)
+    testImplementation(Deps.AndroidX.lifecycleViewModel)
     testImplementation(Deps.Test.junit)
     testImplementation(Deps.Test.mockk)
     testImplementation(Deps.Test.coroutines)
     testImplementation(Deps.Test.turbine)
-    testImplementation("androidx.arch.core:core-testing:2.2.0")
-    testImplementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
-    
+
     androidTestImplementation(Deps.Test.androidJunit)
     androidTestImplementation(Deps.Test.espresso)
     
     testImplementation(Deps.Hilt.android)
     kaptTest(Deps.Hilt.compiler)
     
-    detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:1.23.5")
+    detektPlugins(Deps.detektFormatting)
 }
 
 jacoco {

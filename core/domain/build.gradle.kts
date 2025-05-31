@@ -49,24 +49,20 @@ dependencies {
     implementation(Deps.AndroidX.coreKtx)
     implementation(Deps.AndroidX.lifecycleRuntime)
     implementation(Deps.AndroidX.activityCompose)
-
     implementation(Deps.Compose.ui)
     implementation(Deps.Compose.uiGraphics)
     implementation(Deps.Compose.uiTooling)
     implementation(Deps.Compose.uiToolingPreview)
     implementation(Deps.Compose.material3)
-
     implementation(Deps.Navigation.compose)
     implementation(Deps.Coroutines.android)
-
     testImplementation(Deps.Test.junit)
     testImplementation(Deps.Test.mockk)
     testImplementation(Deps.Test.coroutines)
     testImplementation(Deps.Test.turbine)
     androidTestImplementation(Deps.Test.androidJunit)
     androidTestImplementation(Deps.Test.espresso)
-    
-    detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:1.23.5")
+    kapt(Deps.Room.compiler)
 }
 
 jacoco {

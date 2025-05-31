@@ -28,28 +28,23 @@ dependencies {
     implementation(project(":core:data"))
     implementation(project(":core:domain"))
     implementation(project(":feature:request"))
-
     implementation(Deps.AndroidX.coreKtx)
     implementation(Deps.AndroidX.lifecycleRuntime)
     implementation(Deps.AndroidX.activityCompose)
-
     implementation(Deps.Compose.ui)
     implementation(Deps.Compose.uiGraphics)
     implementation(Deps.Compose.uiTooling)
     implementation(Deps.Compose.uiToolingPreview)
     implementation(Deps.Compose.material3)
-
     implementation(Deps.Navigation.compose)
     implementation(Deps.Coroutines.android)
-
     testImplementation(Deps.Test.junit)
     testImplementation(Deps.Test.mockk)
     testImplementation(Deps.Test.coroutines)
     testImplementation(Deps.Test.turbine)
     androidTestImplementation(Deps.Test.androidJunit)
     androidTestImplementation(Deps.Test.espresso)
-
-    detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:1.23.5")
+    detektPlugins(Deps.detektFormatting)
 }
 
 jacoco {

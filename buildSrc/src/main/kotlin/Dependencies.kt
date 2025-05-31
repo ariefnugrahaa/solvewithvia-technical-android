@@ -16,17 +16,30 @@ object Versions {
     const val turbine = "1.0.0"
     const val androidJunit = "1.1.5"
     const val espresso = "3.5.1"
+    const val archCore = "2.2.0"
+    const val lifecycleViewModel = "2.6.2"
+    const val detekt = "1.23.5"
+    const val ktlint = "11.6.1"
 }
 
 object Deps {
     const val androidGradlePlugin = "com.android.tools.build:gradle:${Versions.androidGradlePlugin}"
     const val kotlinGradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
     const val hiltGradlePlugin = "com.google.dagger:hilt-android-gradle-plugin:${Versions.hilt}"
+    
+    const val detektFormatting = "io.gitlab.arturbosch.detekt:detekt-formatting:${Versions.detekt}"
+    
+    object Plugins {
+        const val detekt = "io.gitlab.arturbosch.detekt"
+        const val ktlint = "org.jlleitschuh.gradle.ktlint"
+    }
 
     object AndroidX {
         const val coreKtx = "androidx.core:core-ktx:${Versions.coreKtx}"
         const val lifecycleRuntime = "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycle}"
         const val activityCompose = "androidx.activity:activity-compose:${Versions.activityCompose}"
+        const val lifecycleViewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycleViewModel}"
+        const val archCore = "androidx.arch.core:core-testing:${Versions.archCore}"
     }
 
     object Compose {
@@ -35,6 +48,8 @@ object Deps {
         const val uiTooling = "androidx.compose.ui:ui-tooling:${Versions.compose}"
         const val uiToolingPreview = "androidx.compose.ui:ui-tooling-preview:${Versions.compose}"
         const val material3 = "androidx.compose.material3:material3:${Versions.material3}"
+        // Add missing Compose dependency
+        const val uiTestManifest = "androidx.compose.ui:ui-test-manifest:${Versions.compose}"
     }
 
     object Navigation {
@@ -65,4 +80,4 @@ object Deps {
         const val androidJunit = "androidx.test.ext:junit:${Versions.androidJunit}"
         const val espresso = "androidx.test.espresso:espresso-core:${Versions.espresso}"
     }
-} 
+}

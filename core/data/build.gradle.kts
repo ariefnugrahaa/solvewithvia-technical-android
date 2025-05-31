@@ -46,22 +46,21 @@ android {
 }
 
 dependencies {
+    implementation(project(":core:domain"))
     implementation(libs.core.ktx)
     implementation(libs.hilt.android)
-    kapt(libs.hilt.android.compiler)
     implementation(Deps.Room.runtime)
     implementation(Deps.Room.ktx)
-    kapt(Deps.Room.compiler)
     implementation(libs.coroutines.android)
-    implementation(project(":core:domain"))
-
     testImplementation(Deps.Test.junit)
     testImplementation(Deps.Test.mockk)
     testImplementation(Deps.Test.coroutines)
     testImplementation(Deps.Test.turbine)
     androidTestImplementation(Deps.Test.androidJunit)
     androidTestImplementation(Deps.Test.espresso)
-    detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:1.23.5")
+    detektPlugins(Deps.detektFormatting)
+    kapt(libs.hilt.android.compiler)
+    kapt(Deps.Room.compiler)
 }
 
 jacoco {
