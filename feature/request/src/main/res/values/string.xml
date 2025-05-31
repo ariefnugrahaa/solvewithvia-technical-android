@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Solvewithvia</string>
+
+    <string name="home_welcome">Welcome</string>
+    <string name="home_create_request_button">Create New Request</string>
+
+    <string name="create_request_title">New Request</string>
+    <string name="create_request_label">Request Title</string>
+    <string name="create_request_reject_button">Reject</string>
+
+    <string name="request_list_title">Request List</string>
+    <string name="request_list_created_label">Created:</string>
+    <string name="request_list_filter_all">ALL</string>
+    <string name="request_list_filter_approved">APPROVED</string>
+    <string name="request_list_filter_rejected">REJECTED</string>
+    <string name="request_list_sort_newest">NEWEST_FIRST</string>
+    <string name="request_list_sort_oldest">OLDEST_FIRST</string>
+    <string name="request_list_no_requests">No requests found.</string>
+    <string name="request_list_sort_label">Sort:</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="settings_dark_mode">Dark Mode</string>
+    <string name="settings_font_size">Font Size</string>
+    <string name="settings_font_size_small">SMALL</string>
+    <string name="settings_font_size_medium">MEDIUM</string>
+    <string name="settings_font_size_large">LARGE</string>
+
+    <string name="slide_to_approve_approved_text">Slide to approve</string>
+
+    <string name="slide_to_approve_text">Slide to approve</string>
+
+</resources>
