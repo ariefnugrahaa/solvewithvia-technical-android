@@ -1,17 +1,5 @@
 # Technical test for SolveWithVia - Android Request Processing App
 
-Home
-![image](https://github.com/user-attachments/assets/e6f10d57-6e87-44dc-a578-fa733dd09101)
-
-Create Request
-![image](https://github.com/user-attachments/assets/8c4916ce-0c7f-4174-8185-bef51f006388)
-
-Request List
-![image](https://github.com/user-attachments/assets/674ee7a2-4458-441b-b59a-a39c95549bee)
-
-Dark Mode & Font Size Setting
-![image](https://github.com/user-attachments/assets/ed3183e5-275d-4d8c-beda-00beb810bce0)
-
 <details>
 <summary>📱 App Screenshots</summary>
 
