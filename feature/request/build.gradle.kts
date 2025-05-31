@@ -12,10 +12,10 @@ configureHilt()
 
 android {
     namespace = "com.example.feature.request"
-    compileSdk = 34
+    compileSdk = AndroidConfig.COMPILE_SDK
 
     defaultConfig {
-        minSdk = 24
+        minSdk = AndroidConfig.MIN_SDK
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")

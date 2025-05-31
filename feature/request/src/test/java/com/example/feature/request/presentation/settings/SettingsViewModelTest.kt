@@ -132,7 +132,8 @@ class SettingsViewModelTest {
         testDispatcher.scheduler.advanceUntilIdle()
         
         // Then
-        // UI state should still be updated even if save fails
-        assertEquals(true, viewModel.isDarkMode.value)
+        // UI state should rollback to original value when save fails
+        assertEquals(false, viewModel.isDarkMode.value)  // Rollback ke false
+        assertEquals("Save error", viewModel.error.value)  // Error message should be set
     }
 }

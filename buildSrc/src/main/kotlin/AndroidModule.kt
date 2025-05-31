@@ -10,10 +10,10 @@ fun Project.configureAndroidModule() {
     extensions.findByName("android")?.let { android ->
         if (android is BaseExtension) {
             android.apply {
-                compileSdkVersion(AndroidConfig.compileSdk)
+                compileSdkVersion(AndroidConfig.COMPILE_SDK)
 
                 defaultConfig {
-                    minSdk = AndroidConfig.minSdk
+                    minSdk = AndroidConfig.MIN_SDK
                     targetSdk = AndroidConfig.targetSdk
                     versionCode = AndroidConfig.versionCode
                     versionName = AndroidConfig.versionName

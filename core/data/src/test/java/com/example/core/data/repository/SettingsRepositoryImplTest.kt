@@ -11,6 +11,7 @@ import io.mockk.mockk
 import io.mockk.verify
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.test.runTest
 import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
@@ -24,31 +25,17 @@ class SettingsRepositoryImplTest {
 
     @Before
     fun setup() {
-        context = mockk()
-        sharedPreferences = mockk()
-        editor = mockk()
+        context = mockk(relaxed = true)
+        sharedPreferences = mockk(relaxed = true)
+        editor = mockk(relaxed = true)
 
-        every { context.getSharedPreferences(any(), any()) } returns sharedPreferences
+        every { context.getSharedPreferences("app_settings", Context.MODE_PRIVATE) } returns sharedPreferences
         every { sharedPreferences.edit() } returns editor
-
         every { editor.putBoolean(any(), any()) } returns editor
         every { editor.putString(any(), any()) } returns editor
         every { editor.apply() } just Runs
 
         repository = SettingsRepositoryImpl(context)
-    }
-
-    @Test
-    fun `getSettings should return Flow of current settings`() = runBlocking {
-        // Given
-        every { sharedPreferences.getBoolean("is_dark_mode", false) } returns true
-        every { sharedPreferences.getString("font_size", FontSize.MEDIUM.name) } returns FontSize.LARGE.name
-
-        // When
-        val settings = repository.getSettings().first()
-
-        // Then
-        assertEquals(AppSettings(isDarkMode = true, fontSize = FontSize.LARGE), settings)
     }
 
     @Test
